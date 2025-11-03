@@ -20,10 +20,10 @@ def call_function(function_call_part, verbose=False):
         print(f" - Calling function: {function_call_part.name}")
 
     function_map = {
-    "get_files_info": get_files_info,
-    "get_file_content": get_file_content,
-    "run_python_file": run_python_file,
-    "write_file": write_file
+        "get_files_info": get_files_info,
+        "get_file_content": get_file_content,
+        "run_python_file": run_python_file,
+        "write_file": write_file
     }
 
     if function_call_part.name in function_map:
